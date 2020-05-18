@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logo11.png">
+    <!-- <link rel="stylesheet" href="<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <title>Undici Computers</title>
+</head>
+<body>
+
+        
+        <nav class="fadeInDown">
+            <a href="index.html">
+                <img src="images/logo.png" height="50" alt="" >
+            </a>
+                <ul>
+                    <li>
+                        <div class="opcions"><a href="#">Servizi</a> </div>                    
+                    </li>
+                    <li>
+                        <div class="opcions"><a href="#">Suggerimenti</a></div>
+                    </li>
+                    <li>
+                        <div class="opcions"><a href="#">FAQs</a></div>
+                    </li>
+                    <li>
+                        <div class="opcions"> <a href="#">Diagnostica <br> il tuo <br> Computer</a></div>
+                    </li>
+                </ul>
+            
+    
+        </nav>
+        <!-- aqui acaba el navbar -->
+        <!-- formulario venta -->
+
+        <div class="container">
+            <h2>Cosa succede al tuo Computer?</h2>
+            <form action="http://google.com" class="formdiagnostic">
+            <div class="quest">
+            <label for="quest1">Il tuo computer si accende?</label>
+                    <select name="quest1">
+                    <option value="On">Accende</option> 
+                    <option value="Off" selected>Non Accende</option>
+                    <option value="Reset">Si Riavvia</option>
+                  </select>
+                </div>
+                <div class="quest">
+                  <label for="quest2">Errori?</label>
+                  <select name="quest2">
+                    <option value="On">Accende</option> 
+                    <option value="Off" selected>Non Accende</option>
+                    <option value="Reset">Si Riavvia</option>
+                  </select>
+                </div>
+                <div class="quest">
+                  <label for="quest3">Che errori dà?</label>
+                  <select name="quest3">
+                      <option value="On">Accende</option> 
+                      <option value="Off" selected>Non Accende</option>
+                      <option value="Reset">Si Riavvia</option>
+                    </select>
+                </div>
+                <h3>Secondo i dati inseriti, la diagnosi del PC è la seguente:</h3>
+                <p>Il computer presenta:</p>
+                <div class="problem">
+                <p>Problemas de memoria Ram</p>
+                </div>
+                <h3>Risolvi questo problema:</h3>
+                <div class="row" id="servizi">
+                <div class="col-4">
+                <img src="images/antivirus1.png" height="200" alt="">
+                </div>
+                <div class="col-6">
+                <h4>Rimozione e Pulizia di virus e spyware.</h4>
+                </div>
+            </div>
+            <h3>I tuoi dati</h3>
+                <div class="userdata">
+                <label for="name">Nome</label> 
+                <input type="text" placeholder="Inserisci il tuo Nome" name="name">
+                <br>
+                <label for="lastname">Cognome</label> 
+                <input type="text" placeholder="Inserisci il tuo Cognome" name="lastname">
+                <br>
+                <label for="mail">E-mail</label> 
+                <input type="text" placeholder="Inserisci il tuo indirizzo E-mail" name="mail">
+                <br>
+                <label for="phone">Telefono</label> 
+                <input type="text" placeholder="Inserisci il tuo Telefono" name="phone">
+                <input type="checkbox" name="whatsapp" class="checkbox">
+                <label for="whatsapp">WhatsApp?</label> 
+                <input type="text" name="hola" value="">
+                <br>
+                <br>
+                <label for="address">Indirizzo</label> 
+                <input type="text" placeholder="Inserisci il tuo Indirizzo" name="address">
+                <br>
+                <label for="city">Città</label> 
+                <input type="text" placeholder="Inserisci la tua Città" name="city">
+                <br>
+                <br>
+
+                <h3>Dati informatici</h3>
+                <label for="brand">Marca</label> 
+                <input type="text" placeholder="Inserisci la marca del tuo Atrezzatura" name="brand">
+                <label for="model">Modello</label> 
+                <input type="text" placeholder="Inserisci la modello del tuo Atrezzatura" name="model">
+                <label for="serial">  Serial Number (richiesto solo per Notebook)</label> 
+                <input type="text" placeholder="Inserisci il Serial Number del tuo Atrezzatura" name="serial">
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="delivery">
+                <label for="remove">Ci richiede di rimuovere la tua attrezzatura?</label>
+                        <select name="remove">
+                        <option value="yes">Sì</option> 
+                        <option value="no" selected>Non</option>
+                      </select>
+                      <h4>Il costo di questo servizio è: € 5</h4>
+                <label for="timeband">Fascia Oraria</label> 
+                        <select name="timeband">
+                        <option value="band1">08: 00-10: 00</option> 
+                        <option value="band2" selected>10: 00-12: 00</option>
+                        <option value="band3">14: 00-16: 00</option>
+                        <option value="band4">16: 00-18: 00</option>
+                      </select>
+                <br>
+                <label for="removedate">Data di ritiro:</label>
+                <input type="date" id="date" name="removedate"
+                value="today"
+                min="2020-01-01" max="2022-12-31">
+                <br>
+                <br>
+                <br>
+                <br>
+                <label for="remove">Richiede che l'apparecchiatura sia consegnata all'indirizzo?</label>
+                        <select name="remove">
+                        <option value="yes">Sì</option> 
+                        <option value="no" selected>Non</option>
+                      </select>
+                <h4>Il costo di questo servizio è: € 5</h4>
+                <br>
+                <label for="timeband">Fascia Oraria</label> 
+                        <select name="timeband">
+                        <option value="band1">08: 00-10: 00</option> 
+                        <option value="band2" selected>10: 00-12: 00</option>
+                        <option value="band3">14: 00-16: 00</option>
+                        <option value="band4">16: 00-18: 00</option>
+                      </select>
+                <br>
+                </div>
+                <div class="total">
+                    <h3>Bilancio Totale Approssimativo</h3>
+                    <h3>€ 40</h3>
+                </div>
+                <button type="submit" class="buy">Confirm</button>
+            </form>
+            
+        </div>
+
+        <!-- formulario venta -->
+        <footer class="footer">
+            <div>Copyright © 2020</div>
+            <div>
+            <p>Developed by <img src="images/undicicomputers.png" width="80" alt="Undici Computers"> </p>
+            </div>
+        </footer>
+    <script src="scripts/script.js"></script>
+    </div>
+    <!-- Aqui empiesa el navbar -->
+</body>
+</html>

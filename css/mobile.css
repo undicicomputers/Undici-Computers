@@ -1,0 +1,79 @@
+@media (max-width: 600px){
+    .hero{
+        display: block;
+        max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+    background-image: url('../images/iot.png');
+    background-size: 65% 90%;
+    background-repeat: no-repeat;
+    background-position: right;
+    object-fit: cover;
+    }
+    
+    .hero h1{
+        font-size: 30px;
+        padding: 4%;
+    }
+    .hero img{
+        height: 0;
+
+        /* max-width:75%; */
+        /* min-width: 75%; */
+        /* width: 75%; */
+        /* height: auto; */
+    }
+
+    .suggestion{
+        display: inline;
+        width: 90%;
+        margin: 0;
+    }
+
+    .suggestion img{
+        margin: 0 25%;
+        height: 50%;
+        width: 50%;
+        object-fit: cover;
+        position: inherit;
+    }
+
+    .suggestion h3 {
+        width: 31%;
+        
+        margin: -40px 28% 0 28%;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        padding: 10px;
+        background-color: #FEFECD;
+        z-index: 1;
+        position: relative;
+        text-align: center;
+        vertical-align: bottom;
+    }
+
+    .services_article{
+        height: 54%;
+        width: 81%;
+    }
+
+    .services_article img{
+        height: 300px;
+        width: 45%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        object-fit: cover;
+    }
+    .services_article_img_grid{
+        height: 300px;
+        width: 60%;
+        object-fit: cover;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0;
+    }
+    .row{
+        text-align: center;
+    }
+}
