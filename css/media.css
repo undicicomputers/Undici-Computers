@@ -1,0 +1,186 @@
+@media screen and (max-width: 1024px){
+    .menu{
+        position: relative;
+    }
+}
+
+@media (max-width: 767px){
+
+    body{
+        z-index: 2;
+    }
+
+    .suggestion{
+        display: inline;
+        width: 90%;
+        margin: 0;
+    }
+
+    .suggestion img{
+        margin: 0 25%;
+        height: 50%;
+        width: 50%;
+        object-fit: cover;
+        position: inherit;
+    }
+
+    .suggestion h3 {
+        width: 31%;
+        
+        margin: -40px 28% 0 28%;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        padding: 10px;
+        background-color: #FEFECD;
+        z-index: 1;
+        position: relative;
+        text-align: center;
+        vertical-align: bottom;
+    }
+
+    .services_article{
+        height: 54%;
+        width: 81%;
+    }
+
+    .services_article img{
+        height: 300px;
+        width: 45%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        object-fit: cover;
+    }
+    .services_article_img_grid{
+        height: 300px;
+        width: 60%;
+        object-fit: cover;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0;
+    }
+    .row{
+        text-align: center;
+    }
+
+    .contact{
+        flex-wrap: wrap;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .form_email input{
+        margin: 10px 5px;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+.burger-button{
+    display: block;
+    position: fixed;
+}
+.fadeInDown{
+    display: block;
+    text-align: center;
+}
+
+.menu {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.8);
+    
+    z-index: 3;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.menu.is-active{
+    left: 0;
+}
+.close-button .menu.is-active{
+    display: block;
+    position: fixed;
+    left: 0;
+}
+
+.menu ol{
+    display: block;
+}
+.menu ol li {
+    margin: 30px auto;
+}
+.menu ol li a{
+    color: #026FFF;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.hero{
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+    background-image: url('../images/iot.png');
+    background-size: 65% 90%;
+    background-repeat: no-repeat;
+    background-position: right;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero h1{
+    font-size: 30px;
+    padding: 4%;
+}
+.hero img{
+    height: 0;
+
+        /* max-width:75%; */
+        /* min-width: 75%; */
+        /* width: 75%; */
+        /* height: auto; */
+}
+.form_email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.form_email h2{
+    margin: 0 100%;
+    font-size: 30px;
+}
+
+}
+
+@media screen and (max-width: 480px){
+    .services_article h3{
+        height: 100%;
+        width: auto;
+        margin: auto;
+        font-size: 16px;
+        padding: 3%;
+    }
+    .services_button {
+        margin: 10%;
+    }
+    .form_email label{
+        font-size: 20px;
+        margin: 0 10px;
+    }
+    .form_email input{
+        margin: 10px 100%;
+    }
+
+}
+@media screen and (max-width: 320px){
+    .services_article h3{
+        font-size: 14px;
+    }
+}
